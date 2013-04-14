@@ -11,6 +11,8 @@
       api_key: o5zt0b5vq1cy
       onLoad: onLinkedInLoad
       authorize: true
+      lang: en_US
+      scope: r_fullprofile
     </script>
 
     <!-- GMAPS -->
@@ -35,13 +37,13 @@
     </script>
   </head>
   <body onload="initialize()">
-    <div id="map_canvas"></div>
-    <div id="in-button">
+      <!--<div id="map_canvas"></div>-->
+      <div id="in-button">
       <script type="in/Login">
         Hello, <?js= firstName ?> <?js= lastName ?>.
       </script>
     </div>
-    <div id="profiles">
+    <div id="profile">
     </div>
   </body>
 </html>
