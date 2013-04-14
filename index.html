@@ -3,11 +3,17 @@
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
-    <style type="text/css">
-      html { height: 100% }
-      body { height: 100%; margin: 0; padding: 0 }
-      #map_canvas { height: 100% }
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="index.js"></script>
+
+    <!-- LINKEDIN -->
+    <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+      api_key: o5zt0b5vq1cy
+      onLoad: onLinkedInLoad
+      authorize: true
+    </script>
+
+    <!-- GMAPS -->
     <script type="text/javascript"
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJhh3MykPv3bmFf50AnO4kzENetVNcRTo&sensor=false">
     </script>
@@ -29,6 +35,13 @@
     </script>
   </head>
   <body onload="initialize()">
-    <div id="map_canvas" style="width:100%; height:100%"></div>
+    <div id="map_canvas"></div>
+    <div id="in-button">
+      <script type="in/Login">
+        Hello, <?js= firstName ?> <?js= lastName ?>.
+      </script>
+    </div>
+    <div id="profiles">
+    </div>
   </body>
 </html>
