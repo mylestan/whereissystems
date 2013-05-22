@@ -53,8 +53,6 @@ function displayPositions(profile) {
 	} else {
 		document.getElementById("profile").innerHTML += "<p>You did NOT Study at the University of Waterloo.</p>";
 	}
-
-
 }
 
 function errorPositions(error) {
