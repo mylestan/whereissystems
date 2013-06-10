@@ -1,21 +1,88 @@
-html { height: 100% }
+html { 
+}
 
-body { height: 100%; margin: 0; padding: 0 }
+body {
 
+}
 
-#main-content{
-	height:100%;
+html, body, #container, #map-content, #map-canvas{
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+h1 {
+	font-size: 150%
+}
+
+#container{
+
+}
+
+#content{
+	position: absolute;
+
+	min-width: 900px;
+	min-height: 600px;
+
+	margin: 40px 80px;
+	height: 90%;
+	width:90%;
+}
+
+#popup{
+	position: absolute;
+	height: 100%;
+	width: 65%;
+	margin: 0% 5%;
+	left: 0;
+}
+
+#popup-hidden{
+	display: none;
+}
+
+#popup-background{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.9;
+	box-shadow: 0px 0px 20px #222;
+}
+
+#popup-content{
+	position: absolute;
+	height: 96%;
+	width: 96%;
+	margin: 2% 2%;
+
+	color: #EEE;
+}
+
+#sidebar{
+	height: 100%;
+	width: 23%;
+	margin: 0% 1%;
+	right: 0;
+	position: absolute;
+	background-color: #FFF;
+	box-shadow: 0px 0px 20px #222;
+}
+
+#sidebar-content{
+	position: relative;
+	width: 90%;
+	height: 90%;
+	padding: 5%
 }
 
 #map-content{
-	height:100%;
+	position: relative;
+	float:left;
 }
 
-#toolbar-content{
-
-}
-
-#map_canvas{
-	width: 100%;
-	height: 100%;
+#map-canvas{
 }

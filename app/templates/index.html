@@ -4,10 +4,6 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="../static/index.css">
-
     <!-- LINKEDIN -->
     <!-- PK: dwh6ycq1zy0l DK: o5zt0b5vq1cy -->
     <!--<script type="text/javascript" src="http://platform.linkedin.com/in.js">
@@ -19,29 +15,54 @@
     </script> -->
 
     <!-- GMAPS -->
-    <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyDJhh3MykPv3bmFf50AnO4kzENetVNcRTo&sensor=false"></script>
+    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDJhh3MykPv3bmFf50AnO4kzENetVNcRTo&sensor=false"></script>
 
     <!-- jQuery -->
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
 
     <!-- Angular -->
-    <script type="text/javscript" src="../static/angular/angular.js"></script>
+    <!-- <script type="text/javscript" src="../static/angular/angular.js"></script> -->
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="../static/bootstrap/css/bootstrap.css"> -->
+    <!-- <script type="text/javascript" src="../static/bootstrap/js/bootstrap.js"></script> -->
 
     <!-- Page script -->
-    <script type="text/javascript" src ="../static/index.js"></script>
+    <script type="text/javascript" src="../static/index.js"></script>
+    <!-- <script type="text/javascript" src="../static/popup.js"></script> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../static/index.css">
 
   </head>
+
+  <!-- Main Body -->
   <body>
-    <div class="row-fluid" id="main-content">
-      <div class="span9" id="map-content">
-        <div id="map_canvas"></div>
+    <div id="container">
+
+      <div id="map-content">
+        <div id="map-canvas"></div>
       </div>
-        <div class="span3" id="toolbar-content">
-          <h1>Where Is Systems?</h1>
-          <button class="btn btn-block btn-primary" type="button">Get Started</button>
-          <button class="btn btn-block" type="button">Login</button>
+
+      <div id="content">
+
+        <div id="popup">
+          <div id="popup-background"></div>
+          <div id="popup-content">
+            <h1>Welcome to Where Is Systems :)</h1>
+            <p>We're trying to understand what Systems Design Engineering is all about. This is an attempt to visualize the movement of Systems Design Engineering talent since hte program's creation in 1968. By examining the shift in dimensions such as industry and location over time, we hope to understand how the demand for the 'Systems mindset' has developed and changed over time, and the impact that graduates have had on the world</p>
+          </div>
         </div>
+
+        <div id="sidebar">
+          <div id="sidebar-content">
+            <h1>Where is Systems?</h1>
+            <p>One student's attempt to visualize the movement of Systems Design Engineering through time, space, and demand.</p>
+            <div id="buttons">
+              <button type="button" id="join-button" onclick="showPopup()">See popup</button>
+              <button type="button" id="join-button" onclick="hidePopup()">Hide popup!</button>
+            </div>
+          </div>
+        </div>
+
       </div>
-    </div>
-  </body>
-</html>
