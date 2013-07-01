@@ -10,12 +10,37 @@ $(document).ready(function (){
       mapOptions);
 
   var marker = new google.maps.Marker({
-    position: google.maps.LatLng(43.472858,-80.53993),
-    map: map
+    position: map.getCenter(),
+    map: map,
+    title: 'University of Waterloo'
+  });
+
+  //import the data!
+  // AJAX call to local file which represents database at the moment.
+  $.ajax({
+    'async' : true,
+    'url' : './static/data.json',
+    'dataType' : 'json',
+    'cache' : false,
+    'success' : function(data){
+      console.log("AJAX successful.");
+      console.log(data);
+
+      //load it onto the map
+      loadData(data);
+    },
+    'error' : function(error){
+      console.log("Could not retrieve data. Error:");
+      console.log(error);
+    }
   });
 });
 
-// Show and hide the pop-op test
+function loadData(data){
+
+}
+
+// Show and hide the pop-up test
 function hidePopup(){
   var popup = document.getElementById("popup");
   popup.id = "popup-hidden";
