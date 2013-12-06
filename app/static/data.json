@@ -1,8 +1,84 @@
 {
 	"data":[
 		{
-			"name":"Myles",
-			"id":"001"
+			"name":"Myles Tan",
+			"graduatingYear": 2014,
+			"gender":"male",
+			"id":"001",
+			"jobs":[
+				{
+					"company":"NexJ Systems Inc.",
+					"title":"QA Analyst",
+					"department":"Quality Assurance",
+					"description":"Tested NexJ's software on mobile devices, with an emphasis on healthcare technology and hardware integration.",
+					"location":[
+						45.250157,
+						-75.800257
+					],
+					"startDate": 1262613600,
+					"endDate": 1272574800
+				},
+				{
+					"company":"NexJ Systems Inc.",
+					"title":"Health Product Management Analyst",
+					"department":"Healthcare",
+					"description":"Provided market and competitive analysis research to the VP of Healthcare Solutions. Headed research into Behavioral Mechanics in the context of Mobile Wellness Applications.",
+					"location":[
+						45.250157,
+						-75.800257
+					],
+					"startDate": 1283346000,
+					"endDate": 1293228000
+				},
+				{
+					"company":"Desire2Learn Inc.",
+					"title":"Product Designer",
+					"department":"Product Development",
+					"description":"Created UI/UX designs for the Learning Repository product, defined functionality, and ensured it was developed and properly implemented.",
+					"location":[
+						43.451392,
+						-80.498006
+					],
+					"startDate": 1304254800,
+					"endDate": 1314306000
+				},
+				{
+					"company":"NexJ Systems Inc.",
+					"title":"Product Manager",
+					"department":"Healthcare",
+					"description":"Owned functional components for healthcare product suite for various clients, designed and defined features and oversaw their impementation",
+					"location":[
+						45.250157,
+						-75.800257
+					],
+					"startDate": 1325685600,
+					"endDate": 1335646800
+				},
+				{
+					"company":"Azumio Inc.",
+					"title":"iOS Developer",
+					"department":"Development",
+					"description":"Developed new technology within their flagship app Instant Heart Rate which measures overall heart health via your response to standing up.",
+					"location":[
+						37.428456,
+						-122.1434
+					],
+					"startDate": 1347282000,
+					"endDate": 1355349600
+				},
+				{
+					"company":"IBM Canada Inc.",
+					"title":"Extreme Blue Technical Intern",
+					"department":"Social Media Analytics",
+					"description":"Designed and developed proof-of-concept products for better understanding a brand's social media presence.",
+					"location":[
+						45.341528,
+						-75.691531
+					],
+					"startDate": 1368450000,
+					"endDate": 1377291600
+				}
+			]
 		},
 		{
 			"name":"Jon",

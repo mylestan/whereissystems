@@ -8,6 +8,8 @@ body {
 html, body, #container, #map-content, #map-canvas{
 	height: 100%;
 	width: 100%;
+	min-height: 700px;
+	min-width: 905px;
 	padding: 0px;
 	margin: 0px;
 
